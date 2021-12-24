@@ -1,4 +1,4 @@
-import{ac as getDefaultExportFromCjs,P as lib}from"./vendor-8e921715.js";var quill={exports:{}};/*!
+import{ac as getDefaultExportFromCjs,P as lib}from"./vendor-6caafef3.js";var quill={exports:{}};/*!
  * Quill Editor v2.0.0-dev.3
  * https://quilljs.com/
  * Copyright (c) 2014, Jason Chen
