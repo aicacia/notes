@@ -24,7 +24,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "aicacia"
+name = "aicacia_notes"
 version = "0.1.0"
 dependencies = [
  "serde",
