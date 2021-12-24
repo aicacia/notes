@@ -1,17 +1,17 @@
 [package]
-name = "aicacia"
+name = "aicacia_notes"
 version = "0.1.0"
-description = "Quantu App"
+description = "Aicacia Notes"
 authors = [ "nathanfaucett@gmail.com" ]
 license = "MIT/Apache-2.0"
-repository = "https://github.com/aicacia-app/aicacia-app"
+repository = "https://github.com/aicacia/notes"
 default-run = "aicacia"
 edition = "2021"
 rust-version = "1.56"
 build = "build.rs"
 
 [[bin]]
-name = "aicacia"
+name = "aicacia_notes"
 path = "src/main.rs"
 
 [build-dependencies]
