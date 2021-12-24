@@ -1,0 +1,18 @@
+{
+	"name": "Aicacia Notes",
+	"short_name": "Notes",
+	"description": "Aicacia Notes",
+	"version": "1.0",
+	"manifest_version": 3,
+	"icons": [
+		{
+			"src": "/notes/icon.png",
+			"sizes": "256x256",
+			"type": "image/png"
+		}
+	],
+	"start_url": "/notes",
+	"display": "standalone",
+	"background_color": "#ffffff",
+	"theme_color": "#07689f"
+}
