@@ -14,7 +14,7 @@
 	class="overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none justify-center items-center flex"
 	class:hidden={!open}
 >
-	<div class="relative my-6 w-96 md:w-1/2 mx-auto">
+	<div class="relative my-6 w-96 md:w-1/3 mx-auto">
 		<div
 			class="border-0 shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none"
 		>

@@ -17,6 +17,7 @@
 	import { isEmpty } from '$lib/editor/isEmpty';
 	import Note from './Note.svelte';
 	import RichViewer from './RichViewer.svelte';
+	import Tags from './Tags.svelte';
 	import { cleanString } from '$lib/editor/toSearchString';
 
 	let editOpen = false;
@@ -83,6 +84,9 @@
 	</div>
 	{#if noteToEdit}
 		<RichEditor bind:content={noteToEdit.content} placeholder="Notes" on:change={debounceUpdate} />
+		<div class="mb-2">
+			<Tags bind:tags={noteToEdit.tags} />
+		</div>
 	{/if}
 </Modal>
 
@@ -112,7 +116,7 @@
 	</div>
 
 	<div class="mx-auto container mt-10 mb-24">
-		<div class="masonry-1 md:masonry-2 lg:masonry-3 masonry-gap-2">
+		<div class="masonry-1 sm:masonry-2 md:masonry-3 lg:masonry-4 masonry-gap-2">
 			{#each filteredNotes as note}
 				<div class="break-inside py-2">
 					<Note {note} {onEdit} {onDelete} />

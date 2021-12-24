@@ -3,6 +3,7 @@
 	import { clickOutside } from 'svelte-use-click-outside';
 	import type { INote } from '$lib/state/notes';
 	import RichViewer from './RichViewer.svelte';
+	import Tags from './Tags.svelte';
 
 	export let note: INote;
 	export let onEdit: (note: INote) => void;
@@ -60,6 +61,7 @@
 			</div>
 		</div>
 	</div>
+	<Tags disabled tags={note.tags} />
 	<RichViewer content={note.content} />
 	<div class="flex justify-between">
 		<p class="text-sm text-gray-500">Created {note.createdAt.toLocaleDateString()}</p>
