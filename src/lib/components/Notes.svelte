@@ -112,7 +112,7 @@
 	</div>
 
 	<div class="mx-auto container mt-10 mb-24">
-		<div class="masonry-1 md:masonry-2 lg:masonry-3 gap-2">
+		<div class="masonry-1 md:masonry-2 lg:masonry-3 masonry-gap-2">
 			{#each filteredNotes as note}
 				<div class="break-inside py-2">
 					<Note {note} {onEdit} {onDelete} />
