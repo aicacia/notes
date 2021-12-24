@@ -1,4 +1,3 @@
-import { browser } from '$app/env';
 import { toSearchString } from '$lib/editor/toSearchString';
 import type Op from 'quill-delta/dist/Op';
 import { derived } from 'svelte/store';
@@ -155,7 +154,7 @@ export function noteFromJSON(note: INoteJSON): INote {
 	};
 }
 
-if (browser) {
+function onSync() {
 	remoteStorage
 		.scope('/')
 		.getAll('/notes/', false)
@@ -168,3 +167,5 @@ if (browser) {
 			});
 		});
 }
+
+remoteStorage.on('sync-done', onSync);

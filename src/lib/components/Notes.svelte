@@ -103,7 +103,7 @@
 </Modal>
 
 <div class="flex-grow relative mt-2 overflow-auto">
-	<div class="w-full fixed top-0 bg-black shadow border-b py-1 z-10">
+	<div class="w-full fixed top-0 bg-black shadow border-b px-2 py-1 z-10">
 		<div class="mx-auto container">
 			<input
 				class="input"
@@ -115,7 +115,7 @@
 		</div>
 	</div>
 
-	<div class="mx-auto container mt-10 mb-24">
+	<div class="mx-auto container mt-10 mb-24 px-2">
 		<div class="masonry-1 sm:masonry-2 md:masonry-3 lg:masonry-4 masonry-gap-2">
 			{#each filteredNotes as note}
 				<div class="break-inside py-2">
@@ -128,7 +128,7 @@
 
 <div class="fixed bottom-0 w-full">
 	<div class="container mx-auto mb-8 p-4 relative">
-		<div class="absolute bottom-8 right-0">
+		<div class="absolute bottom-8 right-4">
 			<button class="btn primary p-2 rounded-full shadow-xl" on:click={onCreate}
 				><div class="w-10 h-10"><MdAdd /></div></button
 			>
