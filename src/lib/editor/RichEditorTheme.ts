@@ -12,7 +12,8 @@ const TOOLBAR_CONFIG = [
 	[{ header: ['1', '2', '3', false] }],
 	['bold', 'italic', 'underline', 'strike'],
 	[{ color: [] }, { background: [] }],
-	['code-block', 'formula'],
+	// ['code-block', 'formula'],
+	['formula'],
 	[
 		{
 			list: 'ordered'
