@@ -35,7 +35,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           tagName: '${{ steps.tag.outputs.sha_short }}'
-          releaseName: 'WordGames ${{ steps.tag.outputs.sha_short }}'
+          releaseName: 'Aicacia Notes ${{ steps.tag.outputs.sha_short }}'
           body: See the assets to download this version and install.
           draft: false
           prerelease: false
