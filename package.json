@@ -44,12 +44,9 @@
 	},
 	"dependencies": {
 		"@aicacia/debounce": "^0.1.12",
-		"@aicacia/rand": "^0.2.8",
-		"@aicacia/range": "^0.1.1",
 		"@aicacia/string-fuzzy_equals": "^0.1.4",
 		"highlight.js": "^11.3.1",
 		"katex": "^0.15.1",
-		"localforage": "^1.10.0",
 		"long-press-event": "^2.4.4",
 		"quill": "2.0.0-dev.4",
 		"remotestorage-widget": "^1.5.4",
