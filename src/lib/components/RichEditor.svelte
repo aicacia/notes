@@ -2,7 +2,9 @@
 	import { browser } from '$app/env';
 	import 'quill/dist/quill.core.css';
 	import '$lib/editor/index.css';
-	import hljs from 'highlight.js';
+	import 'katex/dist/katex.min.css';
+	import 'highlight.js/scss/github.scss';
+	import hljs from 'highlight.js/es/common';
 	import katex from 'katex';
 
 	if (browser) {

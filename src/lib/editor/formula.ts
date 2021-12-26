@@ -1,4 +1,5 @@
 import Quill from 'quill';
+import katex from 'katex';
 
 const Embed = Quill.import('blots/embed');
 
@@ -13,12 +14,9 @@ export class Formula extends Embed {
 	static tagName = 'SPAN';
 
 	static create(value?: IFormulaValue) {
-		if (window.katex == null) {
-			throw new Error('Formula module requires KaTeX.');
-		}
 		const node = super.create(value && value.expr) as HTMLSpanElement;
 		if (typeof value === 'object') {
-			window.katex.render(value.expr, node, {
+			katex.render(value.expr, node, {
 				displayMode: !!value.block,
 				throwOnError: false,
 				errorColor: '#f00'

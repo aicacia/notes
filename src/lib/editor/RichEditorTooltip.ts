@@ -5,6 +5,7 @@ import type { Blot } from 'parchment/src/blot/abstract/blot';
 import type { BoundsStatic, Sources } from 'quill';
 import type { RangeStatic } from 'quill';
 import type TooltipClass from 'quill/ui/tooltip';
+import katex from 'katex';
 import type { IFormulaValue } from './formula';
 import { Formula } from './formula';
 
@@ -95,7 +96,7 @@ export class RichEditorTooltip extends Tooltip {
 			{ capture: true }
 		);
 		const onKatexInput = () => {
-			window.katex.render(this.textarea.value, this.katex, {
+			katex.render(this.textarea.value, this.katex, {
 				displayMode: this.block.checked,
 				throwOnError: false,
 				errorColor: '#f00'

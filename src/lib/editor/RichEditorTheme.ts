@@ -11,8 +11,6 @@ const icons = Quill.import('ui/icons');
 const TOOLBAR_CONFIG = [
 	[{ header: ['1', '2', '3', false] }],
 	['bold', 'italic', 'underline', 'strike'],
-	[{ color: [] }, { background: [] }],
-	// ['code-block', 'formula'],
 	['formula'],
 	[
 		{
@@ -22,13 +20,7 @@ const TOOLBAR_CONFIG = [
 			list: 'bullet'
 		}
 	],
-	[
-		{
-			align: []
-		}
-	],
-	['link', 'image'],
-	['clean']
+	['align', 'link', 'image']
 ];
 
 const BUBBLE_DEFAULTS = BubbleTheme.DEFAULTS;

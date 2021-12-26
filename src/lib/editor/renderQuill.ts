@@ -1,8 +1,10 @@
 import type Quill from 'quill';
 import type Delta from 'quill-delta';
 import type Op from 'quill-delta/dist/Op';
-import hljs from 'highlight.js';
+import hljs from 'highlight.js/es/common';
 import { createQuill } from './createQuill';
+
+console.log(hljs);
 
 export function renderQuill(node: HTMLElement, quill: Quill) {
 	node.innerHTML = `<div class="ql-container ql-snow ql-rich-editor ql-read-only"><div class="ql-editor">${quill.root.innerHTML}</div></div>`;
